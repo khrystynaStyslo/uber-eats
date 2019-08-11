@@ -1,0 +1,132 @@
+@media (min-width: 655px) and (max-width: 970px) {
+  .header {
+    &-menu {
+      &-address {
+        p {
+          padding: 5px;
+        }
+      }
+    }
+    &-basket {
+      margin-left: 5px;
+    }
+    .select-address {
+      padding: 10px 20px 10px 25px;
+      &::placeholder {
+        @include font;
+      }
+    }
+    .select-address,
+    .select-time {
+      @include font;
+    }
+  }
+
+  .main {
+    .product-list {
+      &-item {
+        flex-basis: 50%;
+      }
+    }
+  }
+
+  .footer {
+    &-company,
+    &-info {
+      grid-gap: 20px;
+    }
+    .arrow {
+      right: 15px;
+    }
+    .language-select {
+      width: 180px;
+      select {
+        padding-right: 72px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .header {
+    &-menu {
+      max-width: $small-width;
+      &-address {
+        display: none;
+      }
+    }
+    &-basket {
+      display: none;
+    }
+    &-btn {
+      width: 72px;
+      font-size: 11px;
+    }
+    .select-address {
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .main {
+    &-search {
+      max-width: $small-width;
+      margin-bottom: 20px;
+      &-input {
+        font-size: 13px;
+        &::placeholder {
+          font-size: 13px;
+        }
+      }
+    }
+    &-mobile-address {
+      @include display-flex;
+    }
+    .product-list {
+      &-item {
+        flex-basis: 100%;
+      }
+    }
+    .catalog {
+      max-width: $small-width;
+    }
+  }
+
+  .footer {
+    &-block {
+      max-width: $small-width;
+    }
+
+    &-company {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+
+      &-box {
+        margin-bottom: 0;
+      }
+    }
+
+    .networks {
+      margin-bottom: 40px;
+    }
+
+    &-links {
+      padding-bottom: 25px;
+      &-app {
+        margin-right: 10px;
+      }
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      p {
+        padding-bottom: 10px;
+      }
+    }
+    .arrow {
+      right: 15px;
+    }
+  }
+}

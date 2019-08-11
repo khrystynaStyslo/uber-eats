@@ -1,6 +1,11 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
-  }
+@mixin font($size:13px,$color:#1d1d1d) {
+  font-family: "Roboto", sans-serif;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin display-flex($justify:space-between,$align:center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
 }

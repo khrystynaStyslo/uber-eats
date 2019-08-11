@@ -1,0 +1,100 @@
+.header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+
+  &-menu {
+    @include display-flex;
+    max-width: $main-width;
+    height: 72px;
+    margin: 0 auto 20px;
+    padding: 0 5px;
+    &-logo {
+      line-height: 40px;
+      padding-right: 5px;
+    }
+
+    &-address {
+      @include display-flex;
+      p {
+        padding: 10px;
+        @include font(16px);
+        font-weight: 300;
+        line-height: 20px;
+      }
+    }
+
+    &-registration {
+      @include display-flex;
+    }
+  }
+}
+
+.header-btn {
+  @include font;
+  line-height: 36px;
+  border-radius: 2px;
+  font-weight: 500;
+  width: 80px;
+  margin: 6px;
+  &:hover {
+    box-shadow: 0 5px 40px -10px rgba(0,0,0,0.3);
+    border-radius: 80px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-sign-in {
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  background: #fff;
+  color: $font-color;
+}
+
+.btn-register {
+  background: #262626;
+  color: #fff;
+  border: none;
+}
+
+.header-basket {
+  margin-left: 25px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.address-name,
+.address-time {
+  border: 1px solid #e0e0e0;
+}
+
+.select-address,
+.select-time {
+  @include font(16px);
+  line-height: 20px;
+  box-sizing: border-box;
+  appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.select-address {
+  background: url("../../images/location.svg") no-repeat 3% center;
+  padding: 10px 110px 10px 35px;
+  &::placeholder {
+    @include font(16px);
+  }
+}
+
+.select-time {
+  padding: 10px;
+  &::placeholder {
+    @include font;
+  }
+}
