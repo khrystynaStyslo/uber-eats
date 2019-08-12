@@ -89,7 +89,8 @@ a {
 
 .address-name,
 .address-time {
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #e0e0e0;
+  background-color: #f5f5f0; }
 
 .select-address,
 .select-time {
@@ -104,7 +105,8 @@ a {
           appearance: none;
   outline: none;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #f5f5f0; }
 
 .select-address {
   background: url(".././images/location.svg") no-repeat 3% center;
@@ -165,17 +167,19 @@ a {
           align-items: center;
   max-width: 960px;
   margin: 0 auto 45px;
-  padding: 0 5px;
-  border-bottom: 1px solid rgba(117, 117, 117, 0.3); }
+  padding: 0 5px; }
   .main-search img {
     margin: 8px 8px 8px 0; }
   .main-search-input {
-    border: none;
-    width: 100%;
-    line-height: 50px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    color: #1d1d1d; }
+    color: #1d1d1d;
+    background: url(".././images/search.svg") no-repeat 0.5% center;
+    border: none;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    width: 100%;
+    line-height: 50px;
+    padding-left: 35px; }
     .main-search-input::-webkit-input-placeholder {
       font-family: "Roboto", sans-serif;
       font-size: 16px;
@@ -207,7 +211,8 @@ a {
       mix-blend-mode: normal;
       opacity: 0.5; }
     .main-search-input:focus {
-      outline: none; }
+      outline: none;
+      border-bottom: 1px solid #49a144; }
 
 .main-mobile-address {
   display: none;
@@ -234,7 +239,8 @@ a {
      -moz-appearance: none;
           appearance: none;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #f5f5f0; }
 
 .mobile-address-time {
   width: 30%; }
@@ -244,7 +250,7 @@ a {
 
 .mobile-select-address {
   width: 100%;
-  background: url("../../images/location.svg") no-repeat 3% center;
+  background: url(".././images/location.svg") no-repeat 3% center #f5f5f0;
   padding: 10px 20px 10px 35px; }
   .mobile-select-address::-webkit-input-placeholder {
     font-family: "Roboto", sans-serif;
@@ -372,7 +378,8 @@ a {
 
 .footer {
   width: 100%;
-  background: #262626; }
+  background: #262626;
+  position: relative; }
   .footer-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -389,8 +396,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
-    padding: 0 5px;
-    position: relative; }
+    padding: 0 5px; }
   .footer-logo {
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
@@ -483,7 +489,7 @@ a {
   height: 80px;
   border-radius: 50%;
   position: absolute;
-  right: 0;
+  right: 3%;
   bottom: 5%; }
   .arrow-link {
     display: -webkit-box;

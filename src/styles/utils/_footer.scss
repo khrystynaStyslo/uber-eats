@@ -1,13 +1,13 @@
 .footer {
   width: 100%;
   background: #262626;
+  position: relative;
   &-block {
     @include display-flex;
     max-width: $main-width;
     flex-direction: column;
     margin: 0 auto;
     padding: 0 5px;
-    position: relative;
   }
   &-logo {
     width: 100%;
@@ -98,7 +98,7 @@
   height: 80px;
   border-radius: 50%;
   position: absolute;
-  right: 0;
+  right: 3%;
   bottom: 5%;
   &-link {
     @include display-flex(center);
