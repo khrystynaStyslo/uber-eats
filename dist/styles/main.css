@@ -107,7 +107,7 @@ a {
   cursor: pointer; }
 
 .select-address {
-  background: url("../../images/location.svg") no-repeat 3% center;
+  background: url(".././images/location.svg") no-repeat 3% center;
   padding: 10px 110px 10px 35px; }
   .select-address::-webkit-input-placeholder {
     font-family: "Roboto", sans-serif;
